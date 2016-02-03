@@ -1,7 +1,7 @@
 import sublime, sublime_plugin
 from collections import defaultdict
 
-class TabWrangler(sublime_plugin.EventListener):
+class TabDeduper(sublime_plugin.EventListener):
 	def on_new_async(self, view):
 		cull_views()
 
